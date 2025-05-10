@@ -482,11 +482,12 @@ button, input {
     }
 
     .title {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        font-size: 35px;
     }
 
     .info {
-        margin-top: 62px;
+        margin-top: 15px;
     }
 
     .close {
