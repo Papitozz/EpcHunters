@@ -93,21 +93,20 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
     const burgerBtn = document.querySelector('.burger-btn');
     const logo = document.querySelector('.logo');
-    const body = document.body;
     const loren = document.querySelector('.loren');
+    const overlay = document.querySelector('.overlay');
 
     burgerBtn.addEventListener('click', e => {
         burgerBtn.classList.toggle('active');
         burger.classList.toggle('active');
+        overlay.classList.toggle('active');
 
          if (burgerBtn.classList.contains('active')) {
             logo.style.color = '#F2F3EF';
-            body.style.backgroundColor = 'rgba(0, 0, 0, 0.56)';
             loren.style.display = 'inline';
         } else {
             loren.style.display = 'none';
             logo.style.color = '#fff';
-            body.style.overflow = '';
         }
     })
 })
